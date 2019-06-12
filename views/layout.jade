@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title My Blog Page
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .container
+      img.logo(src="/images/blog.jpg")
+      nav 
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/posts/add') Add Post
+          li
+            a(href='/categories/add') Add Category
+
+      != messages()
+
+      block content
+      footer  
+        p My Blog Page &copy; 2019
